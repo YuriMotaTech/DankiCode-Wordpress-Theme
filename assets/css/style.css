@@ -96,22 +96,22 @@ section.topo{
   opacity: 1;
 }
 
-.time-descrição{
+.hero-descrição{
   margin-top: 50px;
   color: #ffffff;
 }
 
-.time-descrição h2{
+.hero-descrição h2{
   font-size: 45px;
 }
 
-.time-descrição p{
+.hero-descrição p{
   font-size: 14px;
   margin-top: 10px;
   max-width: 240px;
 }
 
-.time-descrição a{
+.hero-descrição a{
   display: inline-block;
   margin-top: 14px;
   padding: 10px 8px;
@@ -123,12 +123,12 @@ section.topo{
   border-radius: 8px;
 }
 
-.time-descrição a:hover{
+.hero-descrição a:hover{
   color: #202020;
   background: #d3a904;
 }
 
-.time-imagem img{
+.hero-imagem img{
   max-width: 100%;
 }
 
@@ -248,6 +248,35 @@ section.diferenciais h2{
 .box-single-diferenciais p{
   font-size: 14px;
   color: #202020;
+}
+
+/* SEÇÃO 4 */
+
+section.sobre-time{
+  padding: 40px 0;
+  background-color: #f4f9fd;
+}
+
+.time-imagem img{
+  max-width: 100%;
+}
+
+.time-descricao{
+  padding: 0 20px;
+}
+
+.time-descricao h2{
+  color: #202020;
+  line-height: 35px;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.time-descricao p{
+  margin-bottom: 20px;
+  padding-right: 30px;
+  font-size: 15px;
+  color: #272727;
 }
 
 /* RESPONSIVO */
