@@ -18,7 +18,7 @@ section.contato{
 
 .mapa-container{
   width: 100%;
-  padding-top: 70%;
+  padding-top: 60%;
   position: relative;
 }
 
@@ -29,6 +29,10 @@ div#mapa{
   width: 100%;
   height: 100%;
   background: gray;
+}
+
+.mapa-container img{
+  max-width: 100%;
 }
 
 .contato-form{

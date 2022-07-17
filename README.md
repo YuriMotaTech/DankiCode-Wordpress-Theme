@@ -6,3 +6,14 @@ Projeto prático desenvolvido durante o curso de Wordpress da [DankiCode](https:
  - CSS
  - Javascript
  - PHP
+
+ ### Ferramentas utilizadas:
+ - VScode
+ - Xampp
+ - phpMyAdmin
+ - Wordpress
+
+ #### Separei os arquivos em:
+ Frontend Puro | Backend
+ - | -
+ HTML, CSS e JS do layout do tema | Integração com Wordpress para tema ficar funcional
