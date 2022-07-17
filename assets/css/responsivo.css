@@ -1,25 +1,30 @@
 @media screen and (max-width: 768px) { 
-    .w50{width: 100%;}
+  .w50{width: 100%;}
     
-    .menu-desktop{display: none;}
-    .menu-mobile{display: block;}
+  .menu-desktop{display: none;}
+  .menu-mobile{display: block;}
   
-    /* INDEX */
-    .box-single-diferenciais{width: 100%;}
+  /* INDEX */
+  .box-single-diferenciais{width: 100%;}
   
-    .col-footer{
-      margin-bottom: 30px;
-      width: 100% !important;
-      text-align: center !important;
-    }
-
-    /* SOBRE */
-    section.sobre-equipe img{margin: 20px 0;}
-
-    .sobre-galeria .single-galeria{
-      padding: 0 10px !important;
-      width: 100% !important;
-      text-align: center;
-      margin-bottom: 20px;
+  .col-footer{
+    margin-bottom: 30px;
+    width: 100% !important;
+    text-align: center !important;
   }
+
+  /* SOBRE */
+  section.sobre-equipe img{margin: 20px 0;}
+
+  .sobre-galeria .single-galeria{
+    padding: 0 10px !important;
+    width: 100% !important;
+    text-align: center;
+    margin-bottom: 20px;
   }
+
+  /* CONTATO */
+  .contato-form{
+    text-align: center;
+  }
+}
