@@ -31,7 +31,51 @@ section.topo{
 
 .logo{
   float: left;
+  padding-left: 10px;
 }
+
+/* MENU MOBILE */
+
+.menu-mobile{
+  display: none;
+}
+
+.menu-mobile{
+  float: right;
+}
+
+.menu-mobile i{
+  padding-right: 10px;
+  font-size: 40px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.menu-mobile ul{
+  left: 0;
+  top: 75px;
+  width: 100%;
+  display: none;
+  position: absolute;
+  list-style-type: none;
+}
+
+.menu-mobile li{
+  padding: 8px 0;
+  text-align: center;
+  display: block;
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 1px solid #00f9f7;
+}
+
+.menu-mobile a{
+  display: block;
+  text-decoration: none;
+  color: #202020;
+}
+
+/* MENU DESKTOP */
 
 .menu-desktop{
   float:right
@@ -72,11 +116,16 @@ section.topo{
   margin-top: 14px;
   padding: 10px 8px;
   text-decoration: none;
-  color: #1b49a5;
+  color: #092d75;
   font-weight: bold;
   background: #ffca00;
   box-shadow: 0 20px 30px 0 rgba(37, 15, 138, 0.2);
   border-radius: 8px;
+}
+
+.time-descrição a:hover{
+  color: #202020;
+  background: #d3a904;
 }
 
 .time-imagem img{
@@ -103,6 +152,8 @@ section.topo{
   font-size: 30px;
   color: #1c4aa6;
 }
+
+/* SEÇÃO 2 */
 
 section.clientes-slider{
   padding: 60px 0;
@@ -158,6 +209,8 @@ li.slick-active button{
 
 /**/
 
+/* SEÇÃO 3 */
+
 section.diferenciais{
   padding: 30px 0;
 }
@@ -202,4 +255,7 @@ section.diferenciais h2{
 @media screen and (max-width: 768px) { 
   .w50{width: 100%;}
   .box-single-diferenciais{width: 100%;}
+  
+  .menu-desktop{display: none;}
+  .menu-mobile{display: block;}
 }
