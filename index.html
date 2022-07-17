@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Product Run - Tema</title>
+</head>
+<body>
+  <section class="topo">
+    <div class="center">
+      <header>
+        <div class="logo"><img src="assets/img/home/logo.png" alt="Product Run Logo"></div>
+      </header>
+      <ul class="menu-desktop">
+        <li><a href="http://">Home</a></li>
+        <li><a href="http://">Sobre</a></li>
+        <li><a href="http://">Contato</a></li>
+      </ul> <!-- menu-desktop -->
+      <div class="clear"></div>
+      <br>
+      <br>
+      <div class="w50 time-descrição">
+        <h2>Melhore a comunicação com seu cliente e time.</h2>
+        <p>Consultoria especializada em startups, empresas, principalmente, pessoas.</p>
+        <a href="">Ver demonstração</a>
+      </div><!-- w50 -->
+      <div class="w50 time-imagem">
+        <img src="assets/img/home/ilustracao.png" alt="Ilustração Time">
+      </div><!-- w50 -->
+      <div class="clear"></div>
+    </div> <!-- center -->
+  </section> <!-- topo -->
+
+  <section class="clientes-slider">
+    <div class="circle"><i class="fal fa-angle-down"></i></div>
+    <div class="center">
+
+    </div> <!-- center -->
+  </section>
+
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/slick.min.js"></script>
+<script type="text/javascript">
+	$('section.clientes-slider .slider-container').slick({
+		dots: true,
+		arrows:false,
+	    infinite: false,
+	    speed:1000,
+	    slidesToShow: 4,
+	    autoplay: true,
+	    centerMode:false,
+	    autoplaySpeed: 3000,
+	    pauseOnHover:false,
+	    responsive: 
+	    [
+	    {
+	      breakpoint: 768,
+	      settings: {
+	        slidesToShow: 2
+	      }
+	    }
+	    ]
+	});
+
+	$('section.depoimentos .depoimentos-box').slick({
+		dots: true,
+		arrows:false,
+	  infinite: true,
+	  speed:1000,
+	  slidesToShow: 1,
+	  centerMode:false
+	});
+</script>
+<script>
+	//Menu responsivo.
+	$('.menu-mobile i').click(function(){
+		$('.menu-mobile').find('ul').slideToggle();
+	})
+</script>
+</body>
+</html>
