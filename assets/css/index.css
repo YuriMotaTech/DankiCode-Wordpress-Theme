@@ -1,9 +1,4 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-}
+body{background-color: #e9e9e9;}
 
 /* Classes Auxiliares */
 
@@ -157,6 +152,7 @@ section.topo{
 
 section.clientes-slider{
   padding: 60px 0;
+  background-color: #ffffff;
 }
 
 .slider-container{
@@ -210,6 +206,7 @@ li.slick-active button{
 /* SEÇÃO 3 */
 
 section.diferenciais{
+  background-color: #ffffff;
   padding: 30px 0;
 }
 
@@ -290,7 +287,7 @@ section.depoimentos{
   text-align: center;
   color: #ffffff;
   font-size: 30px;
-  font-weight: normal;
+  font-weight: 500;
 }
 
 .box-depoimentos{
@@ -321,12 +318,94 @@ section.depoimentos{
   border-radius: 50%; 
 }
 
+/* SEÇÃO 6 */
+
+section.metodologia{
+  position: relative;
+  z-index: 10;
+  top: -50px;
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 40px 0;
+  background: #ffffff;
+  border-top: 3px solid #ffca00;
+  box-shadow: 10px 20px 60px 0 rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+.metodologia h2{
+  color: #232931;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.metodologia p{
+  font-size: 14px;
+  color: #9f9f9f;
+  margin: 15px 0;
+}
+
+.metodologia a{
+  text-decoration: none;
+  color: #ffffff;
+  padding: 8px 15px;
+  background: #23188f;
+  border-radius: 5px;
+  font-size: 14px;
+  display: inline-block;
+  margin-top: 8px;
+}
+
+/* FOOTER */
+
+footer{
+  background-color: #e9e9e9;
+  padding: 0 20px 70px 20px;
+}
+
+footer > .center{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-footer:nth-child(4){
+  width: 46%;
+  text-align: right;
+}
+
+.col-footer{
+  width: 18%;
+}
+
+.col-footer h2{
+  color: #232931;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.col-footer a{
+  color: #9f9f9f;
+  font-size: 13px;
+  display: block;
+  margin-top: 15px;
+  text-decoration: none;
+}
+
 /* RESPONSIVO */
 
 @media screen and (max-width: 768px) { 
   .w50{width: 100%;}
-  .box-single-diferenciais{width: 100%;}
   
   .menu-desktop{display: none;}
   .menu-mobile{display: block;}
+
+  .box-single-diferenciais{width: 100%;}
+
+  .col-footer{
+    margin-bottom: 30px;
+    width: 100% !important;
+    text-align: center !important;
+  }
 }
