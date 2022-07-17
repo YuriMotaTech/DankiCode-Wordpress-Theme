@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://kit.fontawesome.com/a055e3e8af.js" crossorigin="anonymous"></script>
   <title>Product Run - Tema</title>
 </head>
 <body>
@@ -33,12 +34,44 @@
       <div class="clear"></div>
     </div> <!-- center -->
   </section> <!-- topo -->
-
+  
+  <div class="circle"><i class="fa-solid fa-angle-down"></i></div>
+  
   <section class="clientes-slider">
-    <div class="circle"><i class="fal fa-angle-down"></i></div>
     <div class="center">
-
+      <div class="slider-container">
+        <img src="assets/img/home/amazon.png" alt="Logo Amazon">
+        <img src="assets/img/home/costco.png" alt="Logo Costco">
+        <img src="assets/img/home/dominos.png" alt="Logo Dominos">
+        <img src="assets/img/home/uber.png" alt="Logo Uber">
+        <img src="assets/img/home/walmart.png" alt="Logo Walmart">
+      </div> <!-- slider-container -->
     </div> <!-- center -->
+  </section>
+
+  <section class="diferenciais">
+    <div class="center">
+      <h2>Contribuímos de ponta a ponta</h2>
+      <div class="icons-diferenciais">
+
+        <div class="box-single-diferenciais">
+          <img src="assets/img/home/ilustracao-01.png" alt="">
+          <h3>Ambientes Mobile</h3>
+          <p>Garanta que toda sua comunicação esteja alinhada com seu próposito, cada palavra conta.</p>
+        </div>
+        <div class="box-single-diferenciais">
+          <img src="assets/img/home/ilustracao-02.png" alt="">
+          <h3>Sites e Intranets</h3>
+          <p>Um diálogo só acontece quando ambas as partes falam e escutam, garanta que seu público te entende</p>
+        </div>
+        <div class="box-single-diferenciais">
+          <img src="assets/img/home/ilustracao-03.png" alt="">
+          <h3>Comunicação one-to-one</h3>
+          <p>O digital veio pra ficar, sem dúvidas, mas uma comunicação integrada de verdade exige clareza nas decisões.</p>
+        </div>
+
+      </div>
+    </div>
   </section>
 
 <script src="assets/js/jquery.js"></script>
@@ -47,22 +80,22 @@
 	$('section.clientes-slider .slider-container').slick({
 		dots: true,
 		arrows:false,
-	    infinite: false,
-	    speed:1000,
-	    slidesToShow: 4,
-	    autoplay: true,
-	    centerMode:false,
-	    autoplaySpeed: 3000,
-	    pauseOnHover:false,
-	    responsive: 
-	    [
-	    {
-	      breakpoint: 768,
-	      settings: {
-	        slidesToShow: 2
-	      }
+	  infinite: false,
+	  speed:1000,
+	  slidesToShow: 4,
+	  autoplay: true,
+	  centerMode:false,
+	  autoplaySpeed: 3000,
+	  pauseOnHover:false,
+	  responsive: 
+	  [
+	  {
+	    breakpoint: 768,
+	    settings: {
+	      slidesToShow: 2
 	    }
-	    ]
+	  }
+	  ]
 	});
 
 	$('section.depoimentos .depoimentos-box').slick({
