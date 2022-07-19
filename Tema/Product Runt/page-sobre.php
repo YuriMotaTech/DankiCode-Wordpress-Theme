@@ -34,12 +34,12 @@
     <div class="clear"></div>
   </section> <!-- sobre-galeria -->
 
-  <section class="metodologia">
+  <section class="cta-box">
     <div class="center">
       <h2>Conheça nossa Metodologia</h2>
       <p>O que acha de fazermos o que mais gostamos de fazer? Conversar!</br>Entre em contato por e-mail ou telefone.</p>
-      <a href="<?php echo  get_theme_root_uri();?>/Product Runt/contato.php">Entrar em contato</a>
+      <a href="<?php echo  get_theme_root_uri();?>/Product Runt/contato">Entrar em contato</a>
     </div>
-  </section> <!-- metodologia -->
+  </section> <!-- cta-box -->
 
   <?php get_footer(); ?>

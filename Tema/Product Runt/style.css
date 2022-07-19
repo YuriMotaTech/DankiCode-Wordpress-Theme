@@ -3,9 +3,30 @@ Theme Name: Product Runt
 Theme URI: https://github.com/YuriMotaTech/DankiCode-Wordpress-Theme
 Author: Yuri Mota
 Author URI: https://yurimotatech.com
-Description: Tema para o curso de wp da Danki Code
+Description: Tema desenvolvido como projeto prático no curso de Wordpress da Danki Code.
 Version: 1.0
 */
+
+/*--------------------------------------------------------------
+>>> ÍNDICE DE PROPRIEDADES:
+----------------------------------------------------------------
+
+	0. 	CSS Reset
+	1. 	Classes Auxiliares
+	2. 	Site Header
+  3. 	Page Templates
+		a. 	Template: Home
+    b. 	Template: Sobre
+		c. 	Template: Contato
+	4. Error 404
+	5. Site Footer
+	6. Media Queries
+
+----------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*	0. CSS Reset
+/* -------------------------------------------------------------------------- */
 
 *{
     margin: 0;
@@ -14,7 +35,9 @@ Version: 1.0
     font-family: 'Roboto', sans-serif;
   }
 
-/* Classes Auxiliares */
+/* -------------------------------------------------------------------------- */
+/*		1. 	Classes Auxiliares
+/* -------------------------------------------------------------------------- */
 
 body{background-color: #e9e9e9;}
 
@@ -32,4 +55,593 @@ body{background-color: #e9e9e9;}
   padding: 0 15px;
 }
 
-/**/
+/* -------------------------------------------------------------------------- */
+/*		2. 	Site Header
+/* -------------------------------------------------------------------------- */
+
+section.topo{
+  background-image: linear-gradient(114deg, #250e8a, #00f9f7);
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.logo{
+  float: left;
+  padding-left: 10px;
+}
+
+/* MENU MOBILE */
+
+.menu-mobile{
+  display: none;
+}
+
+.menu-mobile{
+  float: right;
+}
+
+.menu-mobile i{
+  padding-right: 10px;
+  font-size: 40px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.menu-mobile ul{
+  left: 0;
+  top: 75px;
+  width: 100%;
+  display: none;
+  position: absolute;
+  list-style-type: none;
+}
+
+.menu-mobile li{
+  padding: 8px 0;
+  text-align: center;
+  display: block;
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 1px solid #00f9f7;
+}
+
+.menu-mobile a{
+  display: block;
+  text-decoration: none;
+  color: #202020;
+}
+
+/* MENU DESKTOP */
+
+.menu-desktop{
+  float:right
+}
+
+.menu-desktop li{
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.menu-desktop a{
+  text-decoration: none;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.menu-desktop a:hover{
+  opacity: 1;
+}
+
+/* -------------------------------------------------------------------------- */
+/*		3a. Page Template: Home
+/* -------------------------------------------------------------------------- */
+
+/* SEÇÃO 1 */
+
+.home__hero-text{
+  margin-top: 50px;
+  color: #ffffff;
+}
+
+.home__hero-text h2{
+  font-size: 45px;
+}
+
+.home__hero-text p{
+  font-size: 14px;
+  margin-top: 10px;
+  max-width: 240px;
+}
+
+.home__hero-text a{
+  display: inline-block;
+  margin-top: 14px;
+  padding: 10px 8px;
+  text-decoration: none;
+  color: #092d75;
+  font-weight: bold;
+  background: #ffca00;
+  box-shadow: 0 20px 30px 0 rgba(37, 15, 138, 0.2);
+  border-radius: 8px;
+}
+
+.home__hero-text a:hover{
+  color: #202020;
+  background: #d3a904;
+}
+
+.hero-imagem img{
+  max-width: 100%;
+}
+
+.home__icon-circle{
+  position: absolute;
+  left: 50%;
+  margin-top: -30px;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: 0 10px 25px 0 rgba(37, 15, 139, 0.1);
+}
+
+.home__icon-circle i{
+  position: relative;
+  top: 5px;
+  font-size: 30px;
+  color: #1c4aa6;
+}
+
+/* SEÇÃO 2 */
+
+section.logo-slider{
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+.slider-container{
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider-container img{
+  padding: 0 30px;
+}
+
+/* Slick Slider */
+
+.slick-dotted ul{
+  list-style-type: none;
+  text-align: center;
+  position: relative;
+  margin-top: 10px;
+}
+
+.slick-dotted li{
+  display: inline-block;
+  margin: 0 7px;
+}
+
+.slick-dotted button:focus{
+  outline: 0;
+}
+
+.slick-dotted li button{
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  color: #d8d8d8;
+  border-width: 0;
+  background: #d8d8d8;
+  opacity: 1;
+  cursor: pointer;
+}
+
+li.slick-active button{
+  background: #195ec7;
+  color: #195ec7;
+}
+
+.slick-slide:focus{
+  outline: none;
+}
+
+/* SEÇÃO 3 */
+
+section.home__cards{
+  background-color: #ffffff;
+  padding: 30px 0;
+}
+
+.home__cards h2{
+  color: #202020;
+  font-size: 28px;
+  text-align: center;
+}
+
+.icons-cards{
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.box-single-cards{
+  text-align: center;
+  width: 33.3%;
+  padding: 0 10px;
+  margin-bottom: 40px;
+}
+
+.box-single-cards img{
+  max-width: 100%;
+}
+
+.box-single-cards h3{
+  font-size: 17px;
+  margin: 10px 0;
+  color: #202020;
+}
+
+.box-single-cards p{
+  font-size: 14px;
+  color: #202020;
+}
+
+/* SEÇÃO 4 */
+
+section.home__about{
+  padding: 40px 0;
+  background-color: #f4f9fd;
+}
+
+.home__about-image img{
+  max-width: 100%;
+}
+
+.home__about-text{
+  padding: 0 20px;
+}
+
+.home__about-text h2{
+  color: #202020;
+  line-height: 35px;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.home__about-text p{
+  margin-bottom: 20px;
+  padding-right: 30px;
+  font-size: 15px;
+  color: #272727;
+}
+
+/* SEÇÃO 5 */
+
+section.home__testimonials{
+  padding: 60px 0;
+  background: rgb(2,0,36);
+  background: linear-gradient(45deg, rgb(8, 3, 106) 0%, rgb(17, 17, 160) 35%, rgba(0,212,255,1) 100%);
+}
+
+.home__testimonials h2{
+  text-align: center;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.box-testimonials{
+  margin: 10px auto;
+  max-width: 800px;
+  overflow: hidden;
+  width: 100%;
+  display: block;  
+}
+
+.single-testimonials{
+  width: 100%;
+  display: inline-block;
+}
+
+.single-testimonials p{
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.single-testimonials img{
+  width: 70px;
+  height: 70px;
+  display: block;
+  margin: 10px auto;
+  border-radius: 50%; 
+}
+
+/* SEÇÃO 6 */
+
+section.cta-box{
+  position: relative;
+  z-index: 10;
+  top: -50px;
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 40px 0;
+  background: #ffffff;
+  border-top: 3px solid #ffca00;
+  box-shadow: 10px 20px 60px 0 rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+.cta-box h2{
+  color: #232931;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.cta-box p{
+  font-size: 14px;
+  color: #9f9f9f;
+  margin: 15px 0;
+}
+
+.cta-box a{
+  text-decoration: none;
+  color: #ffffff;
+  padding: 8px 15px;
+  background: #23188f;
+  border-radius: 5px;
+  font-size: 14px;
+  display: inline-block;
+  margin-top: 8px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*		3b. Page Template: Sobre
+/* -------------------------------------------------------------------------- */
+
+/* SEÇÃO 1 */
+
+section.sobre-equipe{
+  padding: 40px 0;
+}
+
+.equipe-sobre-texto h2{
+  font-size: 45px;
+  color: #202020;
+}
+
+.equipe-sobre-texto p{
+  font-size: 16px;
+  color: #202020;
+  line-height: 25px;
+}
+
+.sobre-equipe img{
+  max-width: 100%;
+}
+
+/* SEÇÃO 2 */
+
+section.sobre-galeria{
+  margin-bottom: 30px;
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+.sobre-galeria > .center{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sobre-galeria img{
+  max-width: 100%;
+}
+
+.sobre-galeria .single-galeria{
+  padding: 0 30px;
+  width: 25%;
+}
+
+/* -------------------------------------------------------------------------- */
+/*		3c. Page Template: Contato
+/* -------------------------------------------------------------------------- */
+
+section.contato{
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+
+.contato-info h2{
+  color: #202020;
+  font-size: 45px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.contato-info p{
+  color: #202020;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.mapa-container{
+  width: 100%;
+  padding-top: 60%;
+  position: relative;
+}
+
+div#mapa{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: gray;
+}
+
+.mapa-container img{
+  max-width: 100%;
+}
+
+.contato-form{
+  padding: 0 30px;
+  margin-top: 40px;
+}
+
+.contato-form input[type=text]{
+  width: 100%;
+  height: 48px;
+  margin-bottom: 15px;
+  border: 1px solid #e3e3e3;
+  box-shadow: 0 2px 4px 0 rgba(92, 99, 110, 0.1);
+  padding-left: 8px;
+  font-size: 16px;
+}
+
+.contato-form select{
+  width: 100%;
+  height: 48px;
+  margin-bottom: 15px;
+  border: 1px solid #e3e3e3;
+  box-shadow: 0 2px 4px 0 rgba(92, 99, 110, 0.1);
+  padding-left: 8px;
+  font-size: 16px;
+}
+
+.contato-form textarea{
+  width: 100%;
+  height: 120px;
+  margin-bottom: 15px;
+  border: 1px solid #e3e3e3;
+  box-shadow: 0 2px 4px 0 rgba(92, 99, 110, 0.1);
+  padding: 8px;
+  font-size: 16px;
+  resize: none;
+}
+
+.contato-form input[type=submit]{
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  box-shadow: 0 20px 30px 0 rgba(203, 203, 203, 0.2);
+  background-color: #212a97;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 17px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*	  4. Error 404
+/* -------------------------------------------------------------------------- */
+
+section.page-404{
+  padding: 180px 0;
+  text-align: center;
+}
+
+.page-404 h2{
+  margin-bottom: 15px;
+}
+
+.page-404 p{
+  margin: 15px 0;
+}
+
+.page-404 a{
+  display: inline-block;
+  margin-top: 14px;
+  padding: 10px 50px;
+  text-decoration: none;
+  color: #092d75;
+  font-weight: bold;
+  background: #ffca00;
+  box-shadow: 0 20px 30px 0 rgba(37, 15, 138, 0.2);
+  border-radius: 8px;
+}
+
+.page-404 a:hover{
+  color: #202020;
+  background: #d3a904;
+}
+
+/* -------------------------------------------------------------------------- */
+/*	  5. Site Footer
+/* -------------------------------------------------------------------------- */
+
+footer{
+  background-color: #e9e9e9;
+  padding: 0 20px 70px 20px;
+}
+
+footer > .center{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-footer:nth-child(4){
+  width: 46%;
+  text-align: right;
+}
+
+.col-footer{
+  width: 18%;
+}
+
+.col-footer h2{
+  color: #232931;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.col-footer a{
+  color: #9f9f9f;
+  font-size: 13px;
+  display: block;
+  margin-top: 15px;
+  text-decoration: none;
+}
+
+/* -------------------------------------------------------------------------- */
+/*	  6. Media Queries
+/* -------------------------------------------------------------------------- */
+
+@media screen and (max-width: 768px) { 
+  .w50{width: 100%;}
+    
+  .menu-desktop{display: none;}
+  .menu-mobile{display: block;}
+  
+  /* INDEX */
+  .box-single-cards{width: 100%;}
+  
+  .col-footer{
+    margin-bottom: 30px;
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  /* SOBRE */
+  section.sobre-equipe img{margin: 20px 0;}
+
+  .sobre-galeria .single-galeria{
+    padding: 0 10px !important;
+    width: 100% !important;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  /* CONTATO */
+  .contato-form{
+    text-align: center;
+  }
+}
