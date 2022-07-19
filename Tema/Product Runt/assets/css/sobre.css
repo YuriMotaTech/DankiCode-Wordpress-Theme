@@ -1,0 +1,42 @@
+/* SEÇÃO 1 */
+
+section.sobre-equipe{
+    padding: 40px 0;
+}
+
+.equipe-sobre-texto h2{
+    font-size: 45px;
+    color: #202020;
+}
+
+.equipe-sobre-texto p{
+    font-size: 16px;
+    color: #202020;
+    line-height: 25px;
+}
+
+.sobre-equipe img{
+    max-width: 100%;
+}
+
+/* SEÇÃO 2 */
+
+section.sobre-galeria{
+    margin-bottom: 30px;
+    padding: 60px 0;
+    background-color: #ffffff;
+}
+
+.sobre-galeria > .center{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobre-galeria img{
+    max-width: 100%;
+}
+
+.sobre-galeria .single-galeria{
+    padding: 0 30px;
+    width: 25%;
+}

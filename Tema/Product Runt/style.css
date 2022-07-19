@@ -1,0 +1,35 @@
+/* 
+Theme Name: Product Runt
+Theme URI: https://github.com/YuriMotaTech/DankiCode-Wordpress-Theme
+Author: Yuri Mota
+Author URI: https://yurimotatech.com
+Description: Tema para o curso de wp da Danki Code
+Version: 1.0
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+
+/* Classes Auxiliares */
+
+body{background-color: #e9e9e9;}
+
+.center{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+
+.clear{clear: both;}
+
+.w50{ 
+  float: left;
+  width: 50%;
+  padding: 0 15px;
+}
+
+/**/
